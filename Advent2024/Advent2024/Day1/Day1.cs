@@ -48,6 +48,6 @@ public class Day1 : IDay {
     }
     public void Solve() {
         SolvePartOne(); // 1765812
-        SolvePartTwo();
+        SolvePartTwo(); // 20520794
     }
 }

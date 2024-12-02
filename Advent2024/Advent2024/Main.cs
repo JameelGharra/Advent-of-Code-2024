@@ -1,5 +1,6 @@
 ﻿public class Program {
     static void Main(string[] args) {
-        Day1 day = new();
+        //_ = new Day1();
+        Day2 day = new Day2();
     }
 }
