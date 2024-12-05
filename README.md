@@ -27,4 +27,24 @@ Let the number of reports be **'T'** and the length of each report is **'N'** in
       * Check if we have a pyramid/valley case, for e.g.: 5, 8, 3 or 7, 3, 9 - if so, then consider removing i, i+1, i+2.  
   When considering, remove the element and check if the report is safe now.
   We have made T * N * 3 on average, then we kept the **O(T * N)** same as first part.
+
+
+# Day 3: Mul the do() and the don't()
+
+  ## Part One:
+  Do a while loop where you find "mul" from the starting index (this is important to process the characters only once), make checks using substring (constant time knowing
+  the maximum length of mul arguments every time). We process only once, then it is **O(N) time and O(1) space**.
+  
+  ## Part Two:
+  The time complexity here is the same as above, same tricks, just adding a flag to know whether we are adding the multiplication result or not.
+
+# Day 4: Search for XMAS and an X shaped MAS & their reverse versions
+
+  ## Part One:
+  It is a simple DFS (obviously can be done without any recursion), where we process each element inside the board 8 times tops, meaning we still at  **O(M * N)** where M is rows, 
+  N amount of columns.
+
+  ## Part Two:
+  Here we have actually less operations, approx. 3 * M * N iterations total, and the reason is because we only check per element the bottom-right diagonal and
+  left bottom diagonal for the second element on the current element's right (X Y Z - referring to Z as second), **O(M * N)**.
   
