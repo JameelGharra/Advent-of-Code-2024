@@ -47,4 +47,10 @@ Let the number of reports be **'T'** and the length of each report is **'N'** in
   ## Part Two:
   Here we have actually less operations, approx. 3 * M * N iterations total, and the reason is because we only check per element the bottom-right diagonal and
   left bottom diagonal for the second element on the current element's right (X Y Z - referring to Z as second), **O(M * N)**.
-  
+
+# Day 5: Update pages following rules
+
+  ## Part One:
+  Collecting the rules as tuples in a list and then per update we map each page to its' position in the update and check for reach rule (if the elements of the rule appeared
+  in that specific update) whether their places are appropriate (x < y).
+  Let U be the number of updates in input and R the number of rules. The time complexity would be **O(U * R)**, space is **O(U')** where U' is the maximum length of numbers in an update.
